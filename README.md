@@ -1,51 +1,56 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Heritage Housing Issues
 
-## Template Instructions
+![I am responsive image]()
 
-Welcome,
+## Table of Contents
+- [Introduction](#introduction)
+- [Business Requirements](#business-requirements)
+- [Dataset Content](#dataset-content)
+- [Hypotheses for Case Study](#hypotheses-for-case-study)
+- [Mapping the business requirements to the Data Visualisations and ML tasks](#mapping-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+- [ML Business Case](#ml-business-case)
+    + [Predict House Sales Prices](#predict-house-prices-in-ames--iowa)
+- [Dashboard Design](#dashboard-design)
+- [Testing](#testing)
+- [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Technologies](#technologies)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
-This is the Code Institute student template for the Heritage Housing project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
 
-You can safely delete the Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+## Introduction
+This is the fifth project portfolio developed during the Code Institute's Full Stack Developer program. 
 
-## How to use this repo
+The project purpose is to build build a Data App with a Machine Learning User Interface (UI) combining: (1) Python packages for Machine Learning, Data Analysis and Data Visualisations; and (2) Streamlit for fast Machine Learning prototyping. 
 
-1. Use this template to create your GitHub project repo
+The Maching Learning and Data Analysis toolkit is applied to a real estate data set and developed with the specific purpose to allow a user to predict the portencial sales price of a property based on certain features of the home.
 
-2. Log into the cloud-based IDE with your GitHub account.
+## Business Requirements
 
-3. On your Dashboard, click on the Create button
+A client who has received an inheritance of four properties from a deceased great-grandfather located in Ames, Iowa, has requested help in maximising the sales price for the inherited properties.
 
-4. Paste in the URL you copied from GitHub earlier
+The client has an excellent understanding of property prices in her own state and residential area, but she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and has provided it for this project.
 
-5. Click Create
+The client expectations are:
 
-6. Wait for the workspace to open. This can take a few minutes.
+1 - Discovering how the house attributes correlate with the sale price. There is an expectation for data visualisations of the correlated variables against the sale price to confirm.
+  
+2 - Predicting the house sale price of the four inherited houses including any other residential properties in Ames, Iowa, based on the most important features of the homes. The predictive model should aim to acchieve an R2 value of 0.8 or higher.
 
-7. Open a new terminal and `pip3 install -r requirements.txt`
+3 - To access required information through an deplyed app that is easily accessible online and userfriendly.
 
-11. Open the jupyter_notebooks directory and click on the notebook you want to open.
+User Story
 
-12. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace so it will be Python-3.8.18 as installed by our template. To confirm this you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In your Cloud IDE, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with *Regenerate API Key*.
+User Story 1: As an end user, I want to be able to discover how features of a home correlate with the sale price, so that I can gain insight into the importance of a homes features in determining the sale price.
+User Story 2: As an end user, I want to be able to determine the likely sale price of a home based on certain features, so that I can gain insight into the likely values of a given home in the area.
+User Story 3: As an end user, I want to be able to access the required information easily online, so that I can find relevant information any time in a user friendly fashion.
 
 ## Dataset Content
 
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-* The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
+- The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
+- We then created user stories where predictive analytics can be applied in a workplace. 
+- The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profiles made up of, but not limited to (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
 |:----|:----|:----|
@@ -74,73 +79,139 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010|
 |SalePrice|Sale Price|34900 - 755000|
 
-## Business Requirements
+## Hypotheses for Case Study
+The following are the hypotheses that I have made for this project:
 
-As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
+1. 
 
-Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
+2. 
 
-* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
-* 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+## Mapping the business requirements to the Data Visualisations and ML tasks
 
-## Hypothesis and how to validate?
+## Business Requirement 1:
+Data Visualization and Correlation.
 
-* List here your project hypothesis(es) and how you envision validating it (them).
+-
+-
+-
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+## Business Requirement 2:
+Regression and Data Analysis.
 
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+-
+-
+-
+
+## Business Requirement 3:
+Online APP and Deployment.
 
 ## ML Business Case
+#### Predict House Prices in Ames, Iowa
 
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
-
+1. What are the business requirements?
+    * The client wants to identify the correlation(s) between the features of a property, and the sale price of a speciic property.
+    * The client wants to be able to estimate/predict the sale price of their 4 inherited houses, or any other houses in Ames, Iowa, as a cosideration for future property investments.
+2. Is there any business requirement that can be answered with conventional data analysis?
+    * We can use Data Analasys to identify those property features most closely correlated to the sale price of a house.
+3. Does the client need a dashboard or an API endpoint?
+    * The client only needs a dashboard in this instance.
+4. What does the client consider as a successful project outcome?
+    * A dashboard showing the most closely correlated features of a house, to the sale price.
+    * The ability to estimate/predicts the sale price for the 4 inherited houses or any other house in Ames, Iowa.
+5. Can you break down the project into Epics and User Stories?
+    * Gathering requirements and collecting data.
+    * Datacleaning, visualization and preparation.
+    * Model training and optimization.
+    * Dashboard designing and development.
+    * Dashboard deployment.
+6. Ethical or Privacy concerns?
+    * As the data is a public data set, there are not concerns.
+7. Does the data suggest a particular model?
+    * The data suggests a regressor where the target is the sale price.
+8. What are the model's inputs and intended outputs?
+    * The inputs consist of the public data set including house features and sale price.
+    * The outputs are the correlation studies and visualizations, as well as the ability to estimate/predict a properties' sale price.
+9. What are the criteria for the performance goal of the predictions?
+    * An R2 score of at least 0.75 on the train set and  the test set.
+10. How will the client benefit?
+    * The client will be able to estimate the sale price of the inherited properties, based on data analysis and not just opinion.
+    * The client will also be able to estimate/predict the sale price of future investment properties. This can help in deciding which properties to buy, what changes to make to properties to get a higher sale price etc...
 ## Dashboard Design
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+This section introduces the use of the Streamlit dashboard APP that would be delivered to the client as requested.
+
+### Page 1: Project Summary
+
+This page will incude:
+
+- Statement of the project purpose.
+- Project terms and jargon.
+- Brief description of the data set.
+- Statement of business requirements.
+- Links to further information.
+
+### Page 2: Sale Price Correlation Analysis
+
+This page will fullfill the first business requirement. It includes checkboxes so the client has the ability to display the following visual guides to the data features:
+
+- A sample of data from the data set.
+- Pearson and spearman correlation plots between the features and the sale price.
+- Histogram and scatterplots of the most important predictive features.
+- Predictive Power Score analysis.
+
+### Page 3: Sale Price Prediction
+
+This page will satisfy the second Business Requirement. It will include:
+
+- Input feature of property attributes to produce a prediction on the sale price.
+- Display of the predicted sale price.
+- Feature to predict the sale prices of the clients specific data in relation to her inherited properties.
+
+### Page 4: Hypothesis and Validation
+
+This page will include:
+
+- A list of the project's hypothesis and how they were validated.
+
+### Page 5: Machine Learning Model
+
+This page will include
+
+- Information on the ML pipeline used to train the model.
+- Demonstration of feature importance.
+- Review of the pipeline performance.
+
+## Testing
+### PEP8 Compliance Testing 
+The python code from all .py files was passed through the [CI Python Linter](https://pep8ci.herokuapp.com/). Code passed with no errors in most cases. However, there was one exception where the code could not be split across multiple lines whilst maintaining readability.
+* In page_sale_price_analysis - line 286:
+    * pps_score_stats = pps_matrix_raw.query("ppscore < 1").filter(['ppscore']).describe().T
+
+### Manual Testing
+The deployed app has been thoroughly tested to ensure data visualisations are properly displayed and sale price predictions run correctly.
 
 ## Unfixed Bugs
-
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+- The app does not currently contain any unfixed bugs.
 
 ## Deployment
-
 ### Heroku
 
-* The App live link is: <https://YOUR_APP_NAME.herokuapp.com/>
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
+1. Before deployment to Heroku, check that the project contains the following files and information.
+    * setup.sh file containing streamlit configuration requirements.
+    * Procfile containing 'web: sh setup.sh && streamlit run app.py'
+    * runtime.txt file which sets the Python environment to 3.8.17, which will reduce any environment conflicts from development to production.
+2. Log into the Heroku command line interface through the Gitpod terminal to set the stack to Heroku-20 and avoid 'unsupported version of Python' errors during deployment.
+    * Install heroku with this command: 'curl https://cli-assets.heroku.com/install.sh | sh'
+    * Log in to Heroku using your Heroku API as the password.
+    * Use command to set tech stack: 'heroku stack:set heroku-20'
+3. Log in to the Heroku website and create a new app
+    * At the Deploy tab, select GitHub as the deployment method.
+    * Select your GitHub repository name and click Search. When it locates the correct repo, click Connect.
+    * Select Main branch, then Deploy Branch.
+    * Watch the build log for any errors during deployment. Once successfully built, click to Open App.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
-## Main Data Analysis and Machine Learning Libraries
-
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+## Technologies
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-* You can break the credits section up into Content and Media, depending on what you have included in your project.
-
-### Content
-
-* The text for the Home page was taken from Wikipedia Article A
-* Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-* The photos used on the home and sign-up page are from This Open Source site
-* The images used for the gallery page were taken from this other open-source site
-
-## Acknowledgements (optional)
-
-
-* In case you would like to thank the people that provided support through this project.
-
+## Acknowledgements
