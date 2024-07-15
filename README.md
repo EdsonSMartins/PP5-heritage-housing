@@ -1,6 +1,6 @@
 # Heritage Housing Issues
 
-![I am responsive image]()
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -26,6 +26,19 @@ The project purpose is to build build a Data App with a Machine Learning User In
 
 The Maching Learning and Data Analysis toolkit is applied to a real estate data set and developed with the specific purpose to allow a user to predict the portencial sales price of a property based on certain features of the home.
 
+## CRISP-DM Workflow
+
+The project was developed using the Cross Industry Standard Process for Data Mining. This follows several iterations over well defined steps:
+
+1. **Epic 1: Business Understanding** -  Understand the project objectives and requirements from a business perspective. This step lays the foundation for the entire project by clarifying the goals and how they relate to the business needs. You can find more details on [Business Requirements](#business-requirements) section.
+2. **Epic 2: Data Understanding** - Collect and understand the initial data to identify data quality issues, discover initial insights, and detect interesting subsets to form hypotheses.  This step is crucial for ensuring the data is suitable for the project's needs. This task is carried out in the Data Cleaning Notebook.
+3. **Epic 3: Data Preparation** - Prepare the final dataset from the initial raw data, which includes all the necessary steps to construct the final dataset from the initial raw data. This step often involves significant effort and time. This task is carried out in the Data Cleaning and Feature Engineering Notebooks.
+4. **Epic 4: Modelling** - Select and apply various modeling techniques and tune their parameters to optimal values. This step involves iterative experimentation to find the best models. This is carried out in the ModelEvalRegression_v1 Notebook.
+5. **Epic 5: Evaluation** - Thoroughly evaluate the model to ensure it meets the business objectives and is robust and reliable. This step ensures that the model performs well on unseen data and aligns with business goals.  This is carried out in the ModelEvalRegression_v1 and ModelEvalRegression_v2 Notebooks.
+6. **Epic 6: Deployment** -Deploy the models into the live environment where they will be used to generate insights and/or decisions. This step includes planning for maintenance and monitoring of the deployed models. The app is deployed in Heroku and the process is described in the [Deployment](#deployment) section below.
+
+These steps are iterative, meaning that based on the findings at any stage, it may be necessary to revisit previous steps to refine and improve the project outcomes.
+
 ## Business Requirements
 
 A client who has received an inheritance of four properties from a deceased great-grandfather located in Ames, Iowa, has requested help in maximising the sales price for the inherited properties.
@@ -38,13 +51,6 @@ The client expectations are:
   
 2 - Predicting the house sale price of the four inherited houses including any other residential properties in Ames, Iowa, based on the most important features of the homes. The predictive model should aim to acchieve an R2 value of 0.8 or higher.
 
-3 - To access required information through an deplyed app that is easily accessible online and userfriendly.
-
-User Story
-
-User Story 1: As an end user, I want to be able to discover how features of a home correlate with the sale price, so that I can gain insight into the importance of a homes features in determining the sale price.
-User Story 2: As an end user, I want to be able to determine the likely sale price of a home based on certain features, so that I can gain insight into the likely values of a given home in the area.
-User Story 3: As an end user, I want to be able to access the required information easily online, so that I can find relevant information any time in a user friendly fashion.
 
 ## Dataset Content
 
@@ -101,9 +107,6 @@ Regression and Data Analysis.
 -
 -
 -
-
-## Business Requirement 3:
-Online APP and Deployment.
 
 ## ML Business Case
 #### Predict House Prices in Ames, Iowa
@@ -183,32 +186,15 @@ This page will include
 
 ## Testing
 ### PEP8 Compliance Testing 
-The python code from all .py files was passed through the [CI Python Linter](https://pep8ci.herokuapp.com/). Code passed with no errors in most cases. However, there was one exception where the code could not be split across multiple lines whilst maintaining readability.
-* In page_sale_price_analysis - line 286:
-    * pps_score_stats = pps_matrix_raw.query("ppscore < 1").filter(['ppscore']).describe().T
+[CI Python Linter](https://pep8ci.herokuapp.com/).  
 
 ### Manual Testing
 The deployed app has been thoroughly tested to ensure data visualisations are properly displayed and sale price predictions run correctly.
 
 ## Unfixed Bugs
-- The app does not currently contain any unfixed bugs.
 
 ## Deployment
 ### Heroku
-
-1. Before deployment to Heroku, check that the project contains the following files and information.
-    * setup.sh file containing streamlit configuration requirements.
-    * Procfile containing 'web: sh setup.sh && streamlit run app.py'
-    * runtime.txt file which sets the Python environment to 3.8.17, which will reduce any environment conflicts from development to production.
-2. Log into the Heroku command line interface through the Gitpod terminal to set the stack to Heroku-20 and avoid 'unsupported version of Python' errors during deployment.
-    * Install heroku with this command: 'curl https://cli-assets.heroku.com/install.sh | sh'
-    * Log in to Heroku using your Heroku API as the password.
-    * Use command to set tech stack: 'heroku stack:set heroku-20'
-3. Log in to the Heroku website and create a new app
-    * At the Deploy tab, select GitHub as the deployment method.
-    * Select your GitHub repository name and click Search. When it locates the correct repo, click Connect.
-    * Select Main branch, then Deploy Branch.
-    * Watch the build log for any errors during deployment. Once successfully built, click to Open App.
 
 ## Technologies
 
