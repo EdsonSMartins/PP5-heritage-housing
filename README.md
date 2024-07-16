@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [CRISP-DM Workflow](#crisp-dm-workflow)
 - [Business Requirements](#business-requirements)
 - [Dataset Content](#dataset-content)
 - [Hypotheses for Case Study](#hypotheses-for-case-study)
