@@ -1,0 +1,143 @@
+[33mcommit 9931dbff50f40410c1200b7df5a9aef431680090[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Tue Jul 30 23:34:56 2024 +0000
+
+    Review correlation and pps studies
+
+[33mcommit ce3dcc15f64f5dc252d2efa476627d85db1bd110[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Tue Jul 30 22:31:25 2024 +0000
+
+    Fix typo in obs data_collection notebook
+
+[33mcommit 38e42a7a4cec85cbea01b37de9c55a4cf502e8bc[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Tue Jul 30 22:24:40 2024 +0000
+
+    Fix typo in obs data_collection notebook
+
+[33mcommit 3f5b921a55b5de61c5d9e3f25d94cffd3af465de[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Tue Jul 30 09:26:52 2024 +0000
+
+    fix: adjust imports to load script
+
+[33mcommit 46f2f729c654e4d7fa8a3f12f0cf382829f87702[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Mon Jul 29 02:57:39 2024 +0000
+
+    doc: create dashboard basics
+
+[33mcommit 0d0f4aa6a932cca2e2bf5cb98aa210b1d7bd67b8[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Mon Jul 29 02:24:43 2024 +0000
+
+    doc: modelEval notebook completed
+
+[33mcommit 9d9e0e527e49350ed720a35d9bced617404a7475[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Mon Jul 29 02:19:13 2024 +0000
+
+    doc: modelEval notebook completed
+
+[33mcommit 050bcdb1f81803233dcebb3b898b625d371beb0d[m
+Author: Edson Martins <smartins.edson@gmail.com>
+Date:   Sun Jul 28 20:53:46 2024 +0000
+
+    doc: added conclusion to FET
+
+[33mcommit d2f9a336d58851de83704e188973b2eaaaa65e27[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sat Jul 27 03:11:34 2024 +0000
+
+    future_engineering_notebook:completed
+
+[33mcommit 5c1b7fb3e73e3cebd6f75e1e0ae67090b0b047ba[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sat Jul 27 01:44:14 2024 +0000
+
+    data_cleaning_notebook: reviewed imputation methods
+
+[33mcommit 6611e9716aed43001f237e78f1c87c6854c62620[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Tue Jul 23 11:34:41 2024 +0000
+
+    future_engineering_notebook: numerical transformation
+
+[33mcommit 2773d0d19bf3d1018ecb866a17ddba4a45bb68f5[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Mon Jul 22 23:11:06 2024 +0000
+
+    future_engineering_notebook: initial data exploration
+
+[33mcommit c1ca32cfacb92e32a15b9c333ec4782369086687[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Mon Jul 22 21:53:26 2024 +0000
+
+    data_cleaning_notebook: objectives achieved successfuly v2
+
+[33mcommit 1b81232fd6bcb6f0070e43d3146c771e7b08ca5d[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sun Jul 21 23:23:22 2024 +0000
+
+    data_cleaning_notebook: objectives achieved successfuly
+
+[33mcommit ab9176e83d490604860a2e23862d3ded589f9d6c[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sun Jul 21 11:06:48 2024 +0000
+
+    data_cleaning_notebook: spreadsheet summary
+
+[33mcommit d037e81a0991cd1ad07644a3d8a6b95e3ffd79c4[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sat Jul 20 15:33:04 2024 +0000
+
+    data_cleaning_notebook: proposal for cleaning/imputing data
+
+[33mcommit 1bcdbea7e8b3eaf976d70e66251d0e2687af6b4a[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sat Jul 20 14:30:55 2024 +0000
+
+    Data_cleaning_notebook: set up objectives section
+
+[33mcommit 5f90bb7d12bc7c203ce4c1510e9663503076daac[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sat Jul 20 14:09:25 2024 +0000
+
+    sale_price_analysis: correlation and plots completed
+
+[33mcommit ea7164d77df47c1c2868572f37ff08a07035a023[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Thu Jul 18 02:13:33 2024 +0000
+
+    SalePriceAnalysis notebook: plotting
+
+[33mcommit a67943897587188dd0f48070afe1212cdce8c26a[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Tue Jul 16 00:41:12 2024 +0000
+
+    Data collection notebook completed
+
+[33mcommit 074a333f74fbfe8c90ed3c771daa7fe581b6910e[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Mon Jul 15 23:19:17 2024 +0000
+
+    add:intro, workflow and business requirement to readme file
+
+[33mcommit aa1baee3309a8a357f17476a4ffefb1d188d58d5[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sun Jul 14 23:46:13 2024 +0000
+
+    Dashboard design basics set up
+
+[33mcommit 6906bb8fcfae42b2cd8c21bff0db9ed6712af30c[m
+Author: EdsonSMartins <smartins.edson@gmail.com>
+Date:   Sun Jul 14 23:18:10 2024 +0000
+
+    intial commit
+
+[33mcommit ba907839b0638b66a72c9eaf8a08d220bad60ff6[m
+Author: EdsonSMartins <126015675+EdsonSMartins@users.noreply.github.com>
+Date:   Sun Jul 14 22:27:02 2024 +0100
+
+    Initial commit
