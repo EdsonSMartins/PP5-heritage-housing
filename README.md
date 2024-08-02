@@ -1,5 +1,9 @@
 # Heritage Housing Issues
+![I am responsive image](#)
 
+**Live Site:** [Live webpage](https://pp5-heritage-housing-sale.herokuapp.com)
+
+**Link to Repository:** [Repository](https://github.com/EdsonSMartins/PP5-heritage-housing)
 
 
 ## Table of Contents
@@ -10,7 +14,6 @@
 - [Hypotheses for Case Study](#hypotheses-for-case-study)
 - [Mapping the business requirements to the Data Visualisations and ML tasks](#mapping-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 - [ML Business Case](#ml-business-case)
-    + [Predict House Sales Prices](#predict-house-prices-in-ames--iowa)
 - [Dashboard Design](#dashboard-design)
 - [Testing](#testing)
 - [Unfixed Bugs](#unfixed-bugs)
@@ -56,7 +59,6 @@ The client expectations are:
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
-- We then created user stories where predictive analytics can be applied in a workplace. 
 - The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profiles made up of, but not limited to (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
@@ -89,25 +91,29 @@ The client expectations are:
 ## Hypotheses for Case Study
 The following are the hypotheses that I have made for this project:
 
-1. 
+1. The sale price of a property is assumed to be correlated with all features of the house.
+    - Correlation study present a differente information where not all features have significant correlation with the sale price of a property. The Study also shows that sale price correlates strongly with features that are commom to most properties such as Groundlevel Living area (GrLivArea), Garage Area (GarageArea), Total Basement Area (TotalBsmtSF), Year Built (YearBuilt), and 1st Floor squarefootage (1stFlrSF).
 
-2. 
+2. We expect a higher price for properties with larger built up area.
+    - This is correct, according to pearson correlation studies, we can identify a linear relation between sale price and Above Ground Living Area (GrLivArea) Total square feet of Basement Area (TotalBsmtSF), 1st floor square feet (1stFlrSF) and Garage Area (GarageArea).
+
+3. The quality and condition of a property, as indicated by features like OverallQual, show a positive correlation with the sale price. Higher-quality properties generally command higher sale prices.
+    -The correlation study shows that Overall quality is one of most correlated feature with the target Sale Price. The modeling and evalation shows that Overall quality is the most important feature to predict the Sale Price.
 
 ## Mapping the business requirements to the Data Visualisations and ML tasks
 
 ## Business Requirement 1:
 Data Visualization and Correlation.
 
--
--
--
+- Inspect the dataset to explore how its data correlates with property sale prices.
+- Utilize Pearson and Spearman correlation methods to investigate how the variables are related to the sale price more comprehensively.
+- The most crucial and relevant data will be plotted against the sale price to help visualize the insights.
 
 ## Business Requirement 2:
 Regression and Data Analysis.
 
--
--
--
+- To forecast the sale price of homes in Ames, Iowa, we will develop a regression model with sale price as the target variable.
+- We will carry out optimization and evaluation steps in order to acchieve an R2 value of 0.8 or higher.
 
 ## ML Business Case
 #### Predict House Prices in Ames, Iowa
@@ -149,56 +155,127 @@ This section introduces the use of the Streamlit dashboard APP that would be del
 This page will incude:
 
 - Statement of the project purpose.
-- Project terms and jargon.
+- Project terminology.
 - Brief description of the data set.
 - Statement of business requirements.
 - Links to further information.
 
+<details>
+<summary>Project Summary Page Screenshots</summary>
+<img src="media/app_summary_page_1.png" width="60%">
+<img src="media/app_summary_page_2.png" width="60%">
+</details>
+
 ### Page 2: Sale Price Correlation Analysis
 
-This page will fullfill the first business requirement. It includes checkboxes so the client has the ability to display the following visual guides to the data features:
+This page will satisfy the first business requirement. It provides checkboxes enabling the client to display visual guides for the following data features:
 
 - A sample of data from the data set.
 - Pearson and spearman correlation plots between the features and the sale price.
 - Histogram and scatterplots of the most important predictive features.
 - Predictive Power Score analysis.
 
+<details>
+<summary>Project Summary Page Screenshots</summary>
+<img src="media/app_price_analysis_page_1.png" width="60%">
+<img src="media/app_price_analysis_page_2.png" width="60%">
+<img src="media/app_price_analysis_page_3.png" width="60%">
+</details>
+
 ### Page 3: Sale Price Prediction
 
 This page will satisfy the second Business Requirement. It will include:
 
-- Input feature of property attributes to produce a prediction on the sale price.
-- Display of the predicted sale price.
+- Feature to forecast the price of any house in Ames, Iowa.
+- Provides an House Price Predictor interface.
 - Feature to predict the sale prices of the clients specific data in relation to her inherited properties.
+
+<details>
+<summary>Project Summary Page Screenshots</summary>
+<img src="media/app_price_predictor_page_1.png" width="60%">
+<img src="media/app_price_predictor_page_2.png" width="60%">
+</details>
 
 ### Page 4: Hypothesis and Validation
 
 This page will include:
 
-- A list of the project's hypothesis and how they were validated.
+- A summary of the project's hypotheses and the processes used for their validation.
+
+<details>
+<summary>Project Summary Page Screenshots</summary>
+<img src="media/app_hypotesis_page_1.png" width="60%">
+</details>
 
 ### Page 5: Machine Learning Model
 
 This page will include
 
-- Information on the ML pipeline used to train the model.
+- Briefly conclusion about the performance of the ML model.
 - Demonstration of feature importance.
-- Review of the pipeline performance.
+- Shows Performance and evaluation by using R2 metric
+
+<details>
+<summary>Project Summary Page Screenshots</summary>
+<img src="media/app_ml_price_prediction_page_1.png" width="60%">
+<img src="media/app_ml_price_prediction_page_2.png" width="60%">
+<img src="media/app_ml_price_prediction_page_3.png" width="60%">
+</details>
 
 ## Testing
 ### PEP8 Compliance Testing 
-[CI Python Linter](https://pep8ci.herokuapp.com/).  
+All python files where passed through the [CI Python Linter](https://pep8ci.herokuapp.com/).[CI Python Linter](https://pep8ci.herokuapp.com/).  
 
 ### Manual Testing
 The deployed app has been thoroughly tested to ensure data visualisations are properly displayed and sale price predictions run correctly.
 
 ## Unfixed Bugs
+The app does not currently contain any unfixed bugs.
 
 ## Deployment
 ### Heroku
+* The App live link is: https://pp5-heritage-housing-sale.herokuapp.com
+* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+* The project was deployed to Heroku using the following steps.
+
+1. Log in to Heroku and create an App
+2. At the Deploy tab, select GitHub as the deployment method.
+3. Select your repository name and click Search. Once it is found, click Connect.
+4. Select the branch you want to deploy, then click Deploy Branch.
+5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
+6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Technologies
+### Development and Deployment
 
+- [GitHub](https://github.com/) was used to create the project repository, story project files and record commits.
+- [GitPod](https://www.gitpod.io/) was used as the development environment.
+- [Streamlit](https://streamlit.io/) was used to develop the online app interface.
+- [Jupyter Notebooks](https://jupyter.org/) were used to analyse and engineer the data, and develop and evaluate the model pipeline.
+- [Heroku](https://www.heroku.com/) was used to deploy the project.
+- [Kaggle](https://www.kaggle.com/) was used to access the dataset
+
+
+### Data Analysis and Machine Learning
+
+- [NumPy](https://numpy.org/) was used for mathematical operations for examples determining means, modes, and standard deviations.
+- [Feature Engine](https://feature-engine.trainindata.com/en/latest/index.html) was used for various data cleaning and preparation tasks.
+- [SciKit Learn](https://scikit-learn.org/stable/) was used for many machine learning tasks.
+- [Pandas](https://pandas.pydata.org/) was used for reading and writing data files, inspecting, creating and manipulating series and dataframes.
+- [ydata_profiling](https://ydata-profiling.ydata.ai/docs/master/index.html) was used to create an extensive Profile Report of the dataset.
+- [PPScore](https://pypi.org/project/ppscore/) was used to determine the predictive power score of the data features.
+- [MatPlotLib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/) were used for constructing plots to visualize the data analysis.
 ## Credits
+### Sources of code
 
+- The CI Churnometer Walkthrough Project and the CI course content was used to source various functions and classes in the development process.
+- The CI Churnometer Walkthrough Project was also the source of the Steamlit pages which were then modified and adapted to the app deployed in this project.
 ## Acknowledgements
+
+Many thanks and appreciation go to the following sources and people:
+* The code institue for use for the [chernomter walkthrough project](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data) to base this project off, as well as the [template](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) for this project.
+* Several past projects provided valuable additional information on how to complete a successful project:
+    * Heritage Housing Issues project by T. Hullis [Link](https://github.com/t-hullis/milestone-project-heritage-housing-issues)
+    * Heritage Housing Issues project by Faridjos[Link](https://github.com/faridjos/milestone-project-heritage-housing-issues)
+* [StackOverflow](https://stackoverflow.com/)
+*  Precious Ijege, my mentor, contributed valuable feedback on project improvements during our mentor meetings.

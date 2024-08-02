@@ -31,18 +31,17 @@ def pg_predict_price_ml_body():
         f" **ML Pipeline: Predict Property Sale Price**\n\n"
         f" A machine learning model has been developed to predict house"
         f" sale prices in Ames, Iowa. "
-        f" Data cleaning and feature engineering techniques were carried out to"
-        f" prepare the data for modelling."
-        f" The ML model was tuned in order to optimise its performance by using "
-        f" the best combination of parameters. These parameters are listed in "
-        f" the ML pipeline below.\n\n"
+        f" Data cleaning and feature engineering techniques were carried "
+        f" out to prepare the data for modelling."
+        f" The ML model was tuned in order to optimise its performance "
+        f" by using the best combination of parameters. These parameters "
+        f" are listed in the ML pipeline below.\n\n"
         f" The model performance was evaluated by using the R2 metric and "
         f" therefore achieving scores of 0.886 and 0.84 on the train set and "
         f" test set respectively. This suggests that the predictive model is "
         f" effectively capturing the underlying patterns in the data and "
         f" providing accurate sale price predictions. \n"
-        
-        )
+    )
 
     st.write("---")
 
@@ -69,4 +68,5 @@ def pg_predict_price_ml_body():
     regression_evaluation_plots(X_train=X_train, y_train=y_train,
                                 X_test=X_test,
                                 y_test=y_test, pipeline=sale_price_pipe,
-                                alpha_scatter=0.5)
+                                alpha_scatter=0.5
+                                )
