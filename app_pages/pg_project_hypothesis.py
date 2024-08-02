@@ -31,7 +31,7 @@ def pg_project_hypothesis_body():
     st.success(
         f" **H3 - The quality and condition of a property, as indicated by features like "
         f" OverallQual, show a positive correlation with the sale price. Higher-quality "
-        f" properties generally command higher sale prices. \n"
+        f" properties generally command higher sale prices.**\n"
         f" * The correlation study shows that Overall quality is one of most correlated "
         f" feature with the target Sale Price. The modeling and evalation shows that "
         f" Overall quality is the most important feature to predict the Sale Price. \n\n"
