@@ -8,7 +8,7 @@ import ppscore as pps
 sns.set_style("whitegrid")
 
 
-def page_sale_price_analysis_body():
+def pg_sale_price_analysis_body():
 
     # load data
     df = load_house_prices_data()

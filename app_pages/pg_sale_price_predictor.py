@@ -8,10 +8,10 @@ from src.data_management import (
     load_pkl_file,
     load_inherited_house_data)
 from src.machine_learning.evaluate_regression import regression_performance
-from src.machine_learning.predictive_analysis_ui import predict_sale_price
+from src.machine_learning.predictive_analysis import predict_sale_price
 
 
-def page_sale_price_predictor_body():
+def pg_sale_price_predictor_body():
 
     # load predict sale price files
     vsn = 'v3'
