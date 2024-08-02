@@ -30,25 +30,22 @@ def pg_sale_price_predictor_body():
         f"* The client is interested in predicting the potential sale "
         f" prices"
         f" for properties in Ames, Iowa, and specifically, she wants to"
-        f" determine a potential value for the properties she inherited "
-        f" (Business Requirement 2). \n"
+        f" determine a potential value for the properties she inherited.\n\n"
+        f" (**Business Requirement 2**). \n"
     )
     st.info(
-        f"The price prediction will be based on four "
-        f" features of the property in question, which the client can input"
-        f" using the selections below. These features were identified by"
-        f" the machine learning model as the best features to predict Sale "
-        f" Price. They are similar to, but may differ slightly from, the "
-        f" variables "
-        f" identified as most correlated in the initial data analysis. This "
-        f" is because the model will carry out more complex analysis on the "
-        f" variables behind the scenes and identify the best variables to use"
-        f" for the prediction of the Sale Price. \n\n More information on the "
-        f" machine learning model and feature importance can be found on the "
-        f" **ML: Price Prediction** page. \n\n"
-        f"**Information on categorical features used in the prediction**\n\n"
-        f"* Overall Quality: 1 - Very Poor to 10 - Very Excellent.\n\n"
-        f"All three numerical features are measured in squarefeet."
+        f" The sale price prediction will be based on four key property "
+        f" features, which the client can specify using the selections below. "
+        f" These features were selected by the machine learning model as the "
+        f" most effective for predicting Sale Price and might differ slightly "
+        f" from the variables most correlated in the preliminary data analysis. "
+        f" This is because the model performs a more sophisticated analysis to "
+        f" determine the best predictors of Sale Price. \n\n"
+        f" For a comprehensive overview of the machine learning model and "
+        f" feature importance, visit the **ML: Price Prediction** page."
+        f" **Information on categorical features used in the prediction**\n\n"
+        f" * Overall Quality: 1 - Very Poor to 10 - Very Excellent.\n\n"
+        f" All three numerical features are measured in squarefeet."
     )
     st.write("---")
 
@@ -97,7 +94,7 @@ def DrawInputsWidgets():
     # from here on we draw the widget based on the variable type
     # (numerical or categorical) and set initial values
     # setup of widgest with min and max values, learned from
-    # https://github.com/t-hullis/milestone-project-heritage-housing-issues/tree/main
+    # https://github.com/helenmurugan/heritage-housing-issues
 
     with col01:
         feature = "OverallQual"
