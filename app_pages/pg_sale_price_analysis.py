@@ -18,11 +18,11 @@ def pg_sale_price_analysis_body():
 
     st.write("### Property Sale Price Analysis")
     st.success(
-        f"* The client is interested in understanding the correlation "
+        f" The client is interested in understanding the correlation "
         f" between a property's attributes/features and the sale price."
         f" Therefore, the client expects data visualization of the correlated"
         f" variables against the sale prices for illustration "
-        f" (Business Requirement 1), \n"
+        f" (**Business Requirement 1**) \n"
     )
 
     # inspect data
@@ -54,13 +54,11 @@ def pg_sale_price_analysis_body():
     st.write("### Correlation Study")
     # Correlation Study Summary
     st.write(
-        f"A correlation study was conducted to better understand how "
-        f"the variables are correlated to Sale Price. \n"
+        f" A study of correlations was conducted to analyze how  "
+        f" different variables relate to Sale Price. \n"
         f" Below, the results from the Pearson and Spearman correlations"
         f" are displayed in heatmaps. The features most correlated "
-        f" with the Sale Price are then also displayed in a bar plot for"
-        f" each correlation for simplicity. These figures show that"
-        f" the most correlated variable are: **{vars_to_study}**. \n"
+        f" with the Sale Price are are highlighted in a bar plot: **{vars_to_study}**. \n"
         f" Therefore, we also display scatterplots illustrating  the "
         f" correlation of each of these variables with the Sale Price."
     )
@@ -81,9 +79,8 @@ def pg_sale_price_analysis_body():
 
     st.info(
         f"*** Heatmap and Barplot: Spearman Correlation ***  \n\n"
-        f"The Spearman correlation evaluates monotonic relationship, "
-        f"that is a relationship "
-        f"where the variables behave similarly but not necessarily linearly.\n"
+        f" The Spearman correlation evaluates monotonic relationship, "
+        f" where the variables behave similarly but not necessarily linearly.\n"
         f" As with the Pearson heatmap, the last line shows the variables"
         f" on the x-axis, that have a correlation of 0.6 or more with"
         f" the Sale Price. These are then also presented on a barplot"
@@ -95,36 +92,29 @@ def pg_sale_price_analysis_body():
 
     st.info(
         f"*** Correlation Histogram- and Scatterplots *** \n\n"
-        f"The correlation indicators above confirm that "
-        f" Sale Price correlates most strongly with "
-        f"the following variables: \n"
-        f"* Sale Price tends to increase as Overall Quality "
-        f" (OverallQual) goes up. \n"
-        f"* Sale Price tends to increase as Groundlevel Living Area "
-        f" (GrLivArea) increases. \n"
-        f"* Sale Price tends to increase with increasing Garage Area "
-        f" (GarageArea). \n"
-        f"* Sale Price tends to increase with an increase in Total "
-        f" Basement Area (TotalBsmtSF). \n"
-        f"* Sale Price tends to increase with an increase in "
-        f" Year Built (YearBuilt). \n"
-        f"* Sale Price tends to increase with an increase in "
-        f" 1st Floor Squarefootage (1stFlrSF). \n\n"
-        f"The scatterplots below illustrate the trends of the"
-        f" correlations for each variable."
-        f" Firstly a two-dimentional histogram plot gives an idea"
-        f" of the data trend but also where the majority of data"
-        f" are concentrated. The darker blue areas indicated a high "
-        f" concentration of data points. "
-        f" The scatterplots in which the data points are shaded in redish"
-        f" tones, illustrates the correlation of the variable with"
-        f" Sale Price, but also shows how the Overall Quality of "
-        f" the homes always goes up with the Sale Price. "
-        f" Each data point is colored according"
-        f" to the Overall Quality of that data point, with the darker"
-        f" colors indicating higher quality. The"
-        f" trend that with increasing overall quality the Sale Price"
-        f" increases can be clearly seen on all plots."
+        f"The correlation analysis highlights the variables most strongly "
+        f" correlated with Sale Price:\n "
+        f" * Overall Quality (OverallQual): Sale Price tends to increase with "
+        f" higher overall quality.\n"
+        f" * Ground Level Living Area (GrLivArea): Sale Price tends to increase "
+        f" with larger living area.\n"
+        f" * Garage Area (GarageArea): Sale Price tends to increase with larger "
+        f" garage area.\n"
+        f" * Total Basement Area (TotalBsmtSF): Sale Price tends to increase "
+        f" with larger basement area.\n"
+        f" * Year Built (YearBuilt): Sale Price tends to increase with newer "
+        f" construction.\n"
+        f" * 1st Floor Square Footage (1stFlrSF): Sale Price tends to increase "
+        f" with larger first floor area.\n\n"
+        f"Below, scatterplots reveal the correlation trends for each variable. "
+        f" The first plot, a two-dimensional histogram, illustrates data trends "
+        f" and concentrations, with darker blue areas indicating higher data density. "
+        f" The following scatterplots, shaded in reddish hues, show how each variable "
+        f" correlates with Sale Price, emphasizing that Overall Quality of homes tends "
+        f" to rise with Sale Price. Each point’s color represents its Overall Quality, "
+        f" with darker colors indicating superior quality. The trend of increasing Sale "
+        f" Price with better Overall Quality is prominently observed in all plots. "
+
     )
 
     # Correlation plots adapted from the Data Cleaning Notebook
@@ -137,11 +127,11 @@ def pg_sale_price_analysis_body():
         f"between two variables.\n"
         f"The score ranges from 0 (no predictive power) to 1 "
         f"(perfect predictive power). \n"
-        f" To use the plot, find the row on the y-axis labeled 'SalePrice' "
-        f" then follow along the row and see the variables, labeled on the "
-        f" x-axis, with a pps of more"
-        f" than 0.15 expressed on the plot. Overall Quality (OverallQual)"
-        f" has the highest predictive power for the Sale Price target.")
+        f" To analyze the plot, start with 'SalePrice' on the y-axis and "
+        f" track across the row to find x-axis variables with a PPS greater "
+        f" than 0.15. 'Overall Quality (OverallQual)' exhibits the most "
+        f" significant predictive power for Sale Price. "
+    )    
 
     if st.checkbox("Predictive Power Score"):
         calc_display_pps_matrix(df)
