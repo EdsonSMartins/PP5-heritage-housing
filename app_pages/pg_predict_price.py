@@ -28,27 +28,20 @@ def pg_predict_price_ml_body():
         f"outputs/ml_pipeline/predict_sale_price/{vsn}/y_test.csv").squeeze()
 
     st.success(
-        f"**ML Model Performance**\n\n"
-        f"A machine learning model has been developed to predict house"
+        f" **ML Pipeline: Predict Property Sale Price**\n\n"
+        f" A machine learning model has been developed to predict house"
         f" sale prices in Ames, Iowa. "
-        f"Data cleaning and feature engineering techniques were carried out to"
-        f" prepare the data for modelling. This included encoding the "
-        f"KitchenQual variable from categorical to numerical data type."
-        f" The model utilises the ExtraTreesRegressor algorithm which is a"
-        f" linear regressor. The ML model"
-        f" was tuned using the best combination of parameters to optimise"
-        f" model performance. These parameters are shown in the ML pipeline"
-        f" below.\n\n"
-        f"The R2 metric has been used to evaluate ML model performance. This "
-        f"model achieved R2 scores of 0.945 and 0.825 on the train set and "
-        f"test set respectively. This indicates that the"
-        f" predictive model is performing well in capturing the underlying"
-        f" patterns"
-        f" in the data and making accurate predictions of sale price. "
-        f"The difference between R2 scores achieved on the train and test sets"
-        f" is 0.118, this is considered acceptable and suggests that the model"
-        f" does not significantly overfit or underfit. It generalises well on"
-        f" unseen data."
+        f" Data cleaning and feature engineering techniques were carried out to"
+        f" prepare the data for modelling."
+        f" The ML model was tuned in order to optimise its performance by using "
+        f" the best combination of parameters. These parameters are listed in "
+        f" the ML pipeline below.\n\n"
+        f" The model performance was evaluated by using the R2 metric and "
+        f" therefore achieving scores of 0.886 and 0.84 on the train set and "
+        f" test set respectively. This suggests that the predictive model is "
+        f" effectively capturing the underlying patterns in the data and "
+        f" providing accurate sale price predictions. \n"
+        
         )
 
     st.write("---")
