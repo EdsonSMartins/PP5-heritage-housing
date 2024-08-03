@@ -1,5 +1,5 @@
 # Heritage Housing Issues
-![I am responsive image](media/iamresponsive.png)
+![I am responsive image](src/media/iamresponsive.png)
 
 **Live Site:** [Live webpage](https://pp5-heritage-housing-sale-97893c8293d5.herokuapp.com/)
 
