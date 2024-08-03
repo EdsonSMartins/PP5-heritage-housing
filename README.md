@@ -162,8 +162,8 @@ This page will incude:
 
 <details>
 <summary>Project Summary Page Screenshots</summary>
-<img src="media/app_summary_page_1.png" width="60%">
-<img src="media/app_summary_page_2.png" width="60%">
+<img src="src/media/app_summary_page_1.png" width="60%">
+<img src="src/media/app_summary_page_2.png" width="60%">
 </details>
 
 ### Page 2: Sale Price Correlation Analysis
@@ -177,9 +177,9 @@ This page will satisfy the first business requirement. It provides checkboxes en
 
 <details>
 <summary>Project Summary Page Screenshots</summary>
-<img src="media/app_price_analysis_page_1.png" width="60%">
-<img src="media/app_price_analysis_page_2.png" width="60%">
-<img src="media/app_price_analysis_page_3.png" width="60%">
+<img src="src/media/app_price_analysis_page_1.png" width="60%">
+<img src="src/media/app_price_analysis_page_2.png" width="60%">
+<img src="src/media/app_price_analysis_page_3.png" width="60%">
 </details>
 
 ### Page 3: Sale Price Prediction
@@ -192,8 +192,8 @@ This page will satisfy the second Business Requirement. It will include:
 
 <details>
 <summary>Project Summary Page Screenshots</summary>
-<img src="media/app_price_predictor_page_1.png" width="60%">
-<img src="media/app_price_predictor_page_2.png" width="60%">
+<img src="src/media/app_price_predictor_page_1.png" width="60%">
+<img src="src/media/app_price_predictor_page_2.png" width="60%">
 </details>
 
 ### Page 4: Hypothesis and Validation
@@ -204,7 +204,7 @@ This page will include:
 
 <details>
 <summary>Project Summary Page Screenshots</summary>
-<img src="media/app_hypotesis_page_1.png" width="60%">
+<img src="src/media/app_hypotesis_page_1.png" width="60%">
 </details>
 
 ### Page 5: Machine Learning Model
@@ -217,9 +217,9 @@ This page will include
 
 <details>
 <summary>Project Summary Page Screenshots</summary>
-<img src="media/app_ml_price_prediction_page_1.png" width="60%">
-<img src="media/app_ml_price_prediction_page_2.png" width="60%">
-<img src="media/app_ml_price_prediction_page_3.png" width="60%">
+<img src="src/media/app_ml_price_prediction_page_1.png" width="60%">
+<img src="src/media/app_ml_price_prediction_page_2.png" width="60%">
+<img src="srcmedia/app_ml_price_prediction_page_3.png" width="60%">
 </details>
 
 ## Testing
