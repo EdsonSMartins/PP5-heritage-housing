@@ -1,7 +1,7 @@
 # Heritage Housing Issues
-![I am responsive image](#)
+![I am responsive image](media/iamresponsive_pp5.png)
 
-**Live Site:** [Live webpage](https://pp5-heritage-housing-sale.herokuapp.com)
+**Live Site:** [Live webpage](https://pp5-heritage-housing-sale-97893c8293d5.herokuapp.com/)
 
 **Link to Repository:** [Repository](https://github.com/EdsonSMartins/PP5-heritage-housing)
 
@@ -270,6 +270,7 @@ The app does not currently contain any unfixed bugs.
 
 - The CI Churnometer Walkthrough Project and the CI course content was used to source various functions and classes in the development process.
 - The CI Churnometer Walkthrough Project was also the source of the Steamlit pages which were then modified and adapted to the app deployed in this project.
+
 ## Acknowledgements
 
 Many thanks and appreciation go to the following sources and people:
